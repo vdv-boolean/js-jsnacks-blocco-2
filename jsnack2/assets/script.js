@@ -10,7 +10,7 @@ console.log (`Array of names: ${names}.`)
 const lastNames = ['Di Vita', 'Minardi', 'Lorenzi', 'Caiazzo', 'Farci', 'Casamassima'];
 
 console.log (`Array of last names: ${lastNames}.`)
-
+/*
 // Get random name 
 const randomName = Math.floor(Math.random() * names.length);
 
@@ -19,3 +19,13 @@ const randomLastName = Math.floor(Math.random() * lastNames.length);
 
 //Complete random name
 console.log(names[randomName] + ' ' + lastNames[randomLastName])
+*/
+
+// Get random name list
+const numberName = 15;
+
+for (i = 0; i < numberName; i++) {
+    const randomName = Math.floor(Math.random() * names.length);
+    const randomLastName = Math.floor(Math.random() * lastNames.length);
+    console.log(names[randomName] + ' ' + lastNames[randomLastName])
+}

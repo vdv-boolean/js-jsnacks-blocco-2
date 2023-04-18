@@ -10,6 +10,16 @@ console.log(`Numbers in the array before user input: ${oddNumberArray}`);
 
 //Ask a number to user six times 
 const askTimes = 6;
+const userNumberArray = [];
+
 for (i = 0; i < askTimes; i++) {
-const userInput = parseInt(prompt('Dammi un numero'));
+const userInput = userNumberArray.push(prompt('Dammi un numero'));
+
+// Add odd numbers in to the first array
+if (userInput % 2 == 1) {
+    oddNumberArray.push(userInput);
 }
+}
+console.log(`User numbers input: ${userNumberArray}`);
+console.log(`Numbers in the array after user input: ${oddNumberArray}`);
+

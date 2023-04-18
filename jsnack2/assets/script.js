@@ -11,5 +11,11 @@ const lastNames = ['Di Vita', 'Minardi', 'Lorenzi', 'Caiazzo', 'Farci', 'Casamas
 
 console.log (`Array of last names: ${lastNames}.`)
 
-// Get a list of random complete names
+// Get random name 
+const randomName = Math.floor(Math.random() * names.length);
 
+// Get random last name
+const randomLastName = Math.floor(Math.random() * lastNames.length);
+
+//Complete random name
+console.log(names[randomName] + ' ' + lastNames[randomLastName])

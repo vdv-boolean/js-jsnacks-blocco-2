@@ -10,7 +10,7 @@ console.log(numberArray);
 let sum = 0;
 
 for (let i = 0; i < numberArray.length; i++) {
-    if (numberArray[i] % 2 !== 0) {
+    if (i % 2 !== 0) {
     sum += numberArray[i]
 }
 }
